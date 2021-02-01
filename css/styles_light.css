@@ -1,0 +1,259 @@
+@import url(//db.onlinewebfonts.com/c/304efff9f3963a0ded6c244c0c9a941e?family=Sweet+Sans+Pro);
+
+:root {
+    font-size: 15px;
+    font-family: "Sweet Sans Pro", sans-serif;
+    color: #000000;
+    --link-color: #000000;
+    --name-and-surname-text-color: #000000;;
+    --data-icon-color: #000000;
+    --competencies-icon-color: #000000;
+    --hobby-icon-color: #000000;
+    --main-header_background: #d4d4d4;
+    --main-background: #959595;
+    --main-theme-color: #794f22;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-header_background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    background-color: var(--main-background);
+    margin-top: 1em;
+    width: 63em;
+    height: 85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: black;
+    z-index: 1;
+}
+
+#backgroundImage {
+    width: 63.2em;
+    height: 85.2em;
+    opacity: 0.15;
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+}
+
+td {
+    padding: 0.5em;
+}
+
+a, a:hover {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.main_header {
+    background-color: var(--main-header_background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+
+.data {
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name_surname {
+    font-size: 2.5em;
+    color: var(--name-and-surname-text-color);
+    text-transform: uppercase;
+    background-color: var(--main-theme-color);
+    height: 100%;
+    width: 67%;
+}
+
+.contact {
+    height: fit-content;
+    font-size: 1.1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social {
+    font-size: 1.1em;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.descr_and_pict {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#description {
+    padding: 1em;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#profile_picture {
+    padding: 1em;
+    width: 17em;
+    height: 23em;
+}
+
+.educ_and_exp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education {
+    padding-right: 3em;
+}
+
+.date {
+    border-right-style: solid;
+    border-width: 0.2em;
+    border-color: var(--main-theme-color);
+}
+
+.competencies {
+    display: flex;
+    flex-direction: column;
+}
+
+.competencies_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.exp_header {
+    border-bottom-style: solid;
+    border-color: var(--main-theme-color);
+    border-width: 0.2em;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hobby_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.single_hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single_hobby>p {
+    font-size: 0.7em;
+}
+
+.agreement {
+    font-size: 0.8em;
+    padding: 0 1em;
+}
+
+.comp_col {
+    margin-bottom: 1em;
+}
+
+/*headers*/
+#education_header, #experience_header, #competencies_header, #hobby_header {
+    background-color: var(--main-theme-color);
+    padding: 0.2em;
+}
+
+/*competencies boxes*/
+#java_box, #front_box, #sql_box, #english_box, #russian_box {
+    width: 7em;
+    height: 1em;
+    border-style: solid;
+    border-color: var(--main-theme-color);
+    border-width: 0.2em;
+    background-color: var(--main-theme-color);
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#java_box_inside {
+    width: 3.5em;
+    height: 1em;
+    background-color: var(--main-background);
+    padding: 0;
+}
+
+#front_box_inside {
+    width: 5em;
+    height: 1em;
+    background-color: var(--main-background);
+    padding: 0;
+}
+
+#sql_box_inside {
+    width: 4.5em;
+    height: 1em;
+    background-color: var(--main-background);
+    padding: 0;
+}
+
+#english_box_inside {
+    width: 2em;
+    height: 1em;
+    background-color: var(--main-background);
+    padding: 0;
+}
+
+#russian_box_inside {
+    width: 4em;
+    height: 1em;
+    background-color: var(--main-background);
+    padding: 0;
+}
+
+/*icons in contact section*/
+.contact_icon {
+    margin-right: 0.5em;
+}
+
+/*icons in competencies section*/
+.fa-check-square {
+    font-size: 1.4em;
+    color: var(--competencies-icon-color);
+    margin-left: 0.3em;
+}
+
+/*icons in hobby section*/
+.fa-fish, .fa-bug, .fa-subway, .fa-gem {
+    color: var(--hobby-icon-color);
+    font-size: 1.5em;
+}
