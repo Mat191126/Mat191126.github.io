@@ -82,13 +82,18 @@ a, a:hover {
     padding: 1em 2em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+}
+
+.social_link {
+    padding-right: 3em;
 }
 
 .descr_and_pict {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 #description {
@@ -103,7 +108,7 @@ a, a:hover {
 #profile_picture {
     padding: 1em;
     width: 17em;
-    height: 23em;
+    height: 19em;
 }
 
 .educ_and_exp {
