@@ -132,6 +132,10 @@ a, a:hover {
     flex-direction: column;
 }
 
+.comp_col {
+    margin-bottom: 1em;
+}
+
 .competencies_content {
     display: flex;
     flex-direction: row;
@@ -181,63 +185,17 @@ a, a:hover {
     padding: 0.2em;
 }
 
-#additive_info {
+.additive_info {
     margin-left: 2.5em;
-}
-
-/*competencies boxes*/
-#java_box, #front_box, #sql_box, #python_box, #english_box, #russian_box {
-    width: 7em;
-    height: 1em;
-    border-style: solid;
-    border-color: var(--main-theme-color);
-    border-width: 0.2em;
-    background-color: var(--main-theme-color);
-    padding: 0;
+    margin-top: 1em;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-#java_box_inside {
-    width: 3.5em;
-    height: 1em;
-    background-color: var(--main-background);
-    padding: 0;
-}
-
-#front_box_inside {
-    width: 5em;
-    height: 1em;
-    background-color: var(--main-background);
-    padding: 0;
-}
-
-#sql_box_inside {
-    width: 4.5em;
-    height: 1em;
-    background-color: var(--main-background);
-    padding: 0;
-}
-
-#python_box_inside {
-    width: 4.8em;
-    height: 1em;
-    background-color: var(--main-background);
-    padding: 0;
-}
-
-#english_box_inside {
-    width: 2em;
-    height: 1em;
-    background-color: var(--main-background);
-    padding: 0;
-}
-
-#russian_box_inside {
-    width: 4em;
-    height: 1em;
-    background-color: var(--main-background);
-    padding: 0;
+#additive_start_phrase {
+    margin-right: 0.3em;
+    border-bottom: 0.3em solid var(--main-theme-color);
 }
 
 /*icons in contact section*/
@@ -246,10 +204,14 @@ a, a:hover {
 }
 
 /*icons in competencies section*/
-.fa-check-square {
+.fa-check-square, .fa-arrow-circle-right {
     font-size: 1.4em;
     color: var(--competencies-icon-color);
     margin-left: 0.3em;
+}
+
+.fa-circle {
+    color: var(--competencies-icon-color);
 }
 
 /*icons in hobby section*/
