@@ -10,17 +10,33 @@ body {
 
 .mainContainer {
     background-color: var(--main-background);
-    width: 67em;
-    height: 95em;
+    width: 210mm;
+    height: 297mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     border-style: solid;
     border-width: 0.1em;
     border-color: black;
     z-index: 1;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    .mainContainer {
+        display: inline;
+        width: 96%;
+        height: 98%;
+        position: fixed;
+        top: 1%;
+        left: 2%;
+    }
 }
 
 #backgroundImage {
@@ -30,6 +46,10 @@ body {
     pointer-events: none;
     position: absolute;
     z-index: -1;
+}
+
+h3 {
+    font-size: 1em;
 }
 
 td {
@@ -50,7 +70,7 @@ a, a:hover {
 }
 
 .data {
-    height: 6em;
+    height: 5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,7 +78,7 @@ a, a:hover {
 }
 
 #name_surname {
-    font-size: 2.5em;
+    font-size: 2em;
     color: var(--name-and-surname-text-color);
     text-transform: uppercase;
     display: flex;
@@ -71,7 +91,7 @@ a, a:hover {
 
 .contact {
     height: fit-content;
-    font-size: 1.1em;
+    font-size: 0.9em;
     padding-right: 1em;
     display: flex;
     flex-direction: column;
@@ -80,7 +100,7 @@ a, a:hover {
 }
 
 .social {
-    font-size: 1.1em;
+    font-size: 0.9em;
     padding: 1em 2em;
     display: flex;
     flex-direction: row;
@@ -100,7 +120,6 @@ a, a:hover {
 
 #description {
     padding: 1em;
-    font-size: 1.5em;
     display: flex;
     justify-content: center;
     text-align: justify;
@@ -110,11 +129,12 @@ a, a:hover {
 #profile_picture {
     padding: 1em;
     width: 100%;
-    height: 19em;
+    height: 11em;
     object-fit: contain;
 }
 
 .educ_and_exp {
+    font-size: 0.9em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -140,6 +160,7 @@ a, a:hover {
 }
 
 .competencies_content {
+    font-size: 0.9em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -170,11 +191,11 @@ a, a:hover {
 }
 
 .single_hobby>p {
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .agreement {
-    font-size: 0.8em;
+    font-size: 0.6em;
     padding: 0 1em;
 }
 
@@ -220,5 +241,5 @@ a, a:hover {
 /*icons in hobby section*/
 .fa-fish, .fa-bug, .fa-subway, .fa-gem {
     color: var(--hobby-icon-color);
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
