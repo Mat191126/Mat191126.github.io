@@ -35,13 +35,13 @@ body {
         height: 98%;
         position: fixed;
         top: 1%;
-        left: 2%;
+        left: 1.2%;
     }
 }
 
 #backgroundImage {
-    width: 67.2em;
-    height: 95.2em;
+    width: 100%;
+    height: 100%;
     opacity: 0.15;
     pointer-events: none;
     position: absolute;
