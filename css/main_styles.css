@@ -59,7 +59,7 @@ h3 {
 }
 
 td {
-    padding: 0.5em;
+    padding: 0.1em;
 }
 
 a, a:hover {
@@ -68,67 +68,51 @@ a, a:hover {
 }
 
 .main_header {
-    background-color: var(--main-header_background);
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    opacity: 0.7;
+    flex-direction: row;
 }
 
 .data {
-    height: 5em;
+    background-color: var(--main-header_background);
+    height: fit-content;
+    width: 45%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 0.2em;
+}
+
+.data > p, a {
+    margin: 0.5em 0 0 0;
+    font-weight: bold;
 }
 
 #name_surname {
-    font-size: 2em;
     color: var(--name-and-surname-text-color);
     text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--main-theme-color);
-    height: 100%;
-    width: 60%;
-}
-
-.contact {
-    height: fit-content;
-    font-size: 0.9em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.social {
-    font-size: 0.9em;
-    padding: 1em 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    margin: 0;
+    width: 100%;
+    height: 2em;
 }
 
 .social_link {
     padding-right: 3em;
 }
 
-.descr_and_pict {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.description_container {
+    width: 55%;
 }
 
 #description {
-    font-size: 0.9em;
     padding: 1em;
-    padding-right: 18em;
+    font-size: 0.95em;
+    margin: 0;
     display: flex;
     justify-content: center;
     text-align: justify;
@@ -136,27 +120,18 @@ a, a:hover {
 }
 
 #profile_picture {
-    padding: 1em;
-    height: 14em;
+    width: 50%;
     object-fit: contain;
-    position: absolute;
-    top: -3.5em;
-    left: 70%;
-}
-
-.educ_and_exp {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.education {
-    padding-right: 1.5em;
-    width: 42%;
+    margin: 0.5em 25% 0 25%;
 }
 
 .experience {
-    width: 58%;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.experience_content {
+    padding: 0 0.2em 0 0.2em;
 }
 
 .education > table {
@@ -175,28 +150,24 @@ a, a:hover {
     width: 50%;
 }
 
-.competencies {
+.competencies_skills {
     display: flex;
     flex-direction: column;
 }
 
-.column1, .column3 {
-    width: 35%;
-}
-
-.column2 {
-    width: 24%;
+.competencies, .skills, .languages, .education {
+    width: 45%;
 }
 
 .comp_col {
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
-.competencies_content {
+.competencies_content, .languages_education {
     font-size: 0.9em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .competencies_languages {
@@ -209,7 +180,7 @@ a, a:hover {
     border-width: 0.2em;
 }
 
-.competencies_content > .column3 > table {
+.languages_education > .languages > table {
     border-collapse: separate;
     border-spacing: 0 0.5em;
 }
@@ -225,8 +196,8 @@ a, a:hover {
 }
 
 .language_lvl {
-    font-style: italic;
-    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 1em;
 }
 
 .hobby {
@@ -247,17 +218,16 @@ a, a:hover {
     align-items: center;
 }
 
-.single_hobby>p {
+.single_hobby > p {
     font-size: 0.8em;
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
 }
 
 .agreement {
     font-size: 0.6em;
     padding: 0 1em;
-}
-
-.comp_col {
-    margin-bottom: 1em;
 }
 
 /*headers*/
@@ -302,5 +272,4 @@ a, a:hover {
 /*icons in hobby section*/
 .fa-fish, .fa-bug, .fa-subway, .fa-gem {
     color: var(--hobby-icon-color);
-    font-size: 1.1em;
 }
