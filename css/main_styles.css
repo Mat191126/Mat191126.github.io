@@ -31,8 +31,8 @@ body {
 
     .mainContainer {
         display: inline;
-        width: 96%;
-        height: 98%;
+        width: 100%;
+        height: 100%;
         position: fixed;
         top: 1%;
         left: 1.2%;
@@ -242,10 +242,11 @@ a, a:hover {
 
 .additive_info {
     font-size: 0.8em;
-    margin-left: 2.5em;
+    margin-left: 0.2em;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
 }
 
 #additive_start_phrase {
