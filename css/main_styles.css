@@ -117,13 +117,16 @@ li::marker {
 
 #description {
     padding: 0.3em 1.3em 0.3em;
-    font-size: 0.95em;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
+}
+
+#description > li {
+    font-size: 0.7em;
 }
 
 #profile_picture {
@@ -141,9 +144,14 @@ li::marker {
     padding: 0 0.2em 0 0.2em;
 }
 
+#exp_description > li {
+    font-size: 0.7em;
+}
+
 .education > table {
     border-collapse: separate;
     border-spacing: 0 1em;
+    font-size: 0.7em;
 }
 
 .date {
@@ -179,6 +187,7 @@ li::marker {
 
 .competencies_languages {
     padding-left: 0.7em;
+    font-size: 0.7em;
 }
 
 .exp_header {
