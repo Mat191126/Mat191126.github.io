@@ -125,7 +125,7 @@ li::marker {
     text-justify: inter-word;
 }
 
-#description > li {
+li {
     font-size: 0.7em;
 }
 
@@ -142,10 +142,6 @@ li::marker {
 
 .experience_content {
     padding: 0 0.2em 0 0.2em;
-}
-
-#exp_description > li {
-    font-size: 0.7em;
 }
 
 .education > table {
