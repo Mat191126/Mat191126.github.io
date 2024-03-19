@@ -10,73 +10,72 @@
     <script src="https://kit.fontawesome.com/f244cfe30d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href="cv_dark.html">Light theme</a>
+    <a href="cv_dark.html">Switch to dark theme</a>
     <div class="mainContainer">
         <img src="../images/cv_background_dark.png" id="backgroundImage" alt="Background image">
         <div class="main_header">
             <div class="data">
-                <h2 id="name_surname">Mateusz Przystał</h2>
-                <div class="contact">
+                <img src="../images/profil_pict_oficial.jpg" id="profile_picture" alt="Profile picture">
+                <div id="social_links">
                     <p><i class="contact_icon fas fa-mobile-alt"></i>+48 696 918 779</p>
                     <p><i class="contact_icon far fa-envelope"></i>mateusz.sebastian.przystal@gmail.com</p>
+                    <a class="social_link" href="https://www.linkedin.com/in/mateusz-przystal/" target="_blank"><i class="contact_icon fab fa-linkedin"></i>linkedin.com/in/mateusz-przystal</a>
+                    <a class="social_link" href="https://github.com/Mat191126" target="_blank"><i class="contact_icon fab fa-github"></i>github.com/Mat191126/</a>
                 </div>
             </div>
-            <div class="social">
-                <a class="social_link" href="https://www.linkedin.com/in/mateusz-przystal/" target="_blank"><i class="contact_icon fab fa-linkedin"></i>linkedin.com/in/mateusz-przystal</a>
-                <a class="social_link" href="https://github.com/Mat191126" target="_blank"><i class="contact_icon fab fa-github"></i>github.com/Mat191126/</a>
+            <div class="description_container">
+                <h2 id="name_surname">Mateusz Przystał</h2>
+                <ul id="description"> 
+                    <li>I have been a java developer since 2021. My experience includes Java 17, SAP, and SQL.</li>
+                    <li>In my career I have created several projects, including e-commerce website and a communication platform. 
+                    Personally, I created a website for a horse stable, and I am currently working 
+                    on another project that I called MyCollection</li>
+                    <li>I am eager to enchance my skills as java developer at HSBC.</li>
+                </ul>
             </div>
         </div>
-
-        <div class="descr_and_pict">
-            <p id="description"> 
-                I have always been fond of programming. In secondary school I created simple websites
-                about RPG games with my best friend. 
-                Then I heard about a programming course in the Codecool – company that prepares students
-                for the future job. I thought „If I like it, why shouldn’t I try?”. When I started my programming journey 
-                with Java language I realized that this is the career path that I want to follow.<br> 
-                I am a little out-and-outer so I always try to keep my code clean and
-                readable. I am stubborn as well so when I discover some problems I feel responsible for resolving them.<br>
-                Thanks to this traits of mine I can fulfill myself in the current company. The duties that I'm carrying out 
-                allow me to gain experience along with developing my skills.
-            </p>
-            <img src="../images/profil_pict_oficial.jpg" id="profile_picture" alt="Profile picture">
-        </div>
-
-        <div class="educ_and_exp">
-            <div class="education">
-                <h3 id="education_header">Education</h3>
-                <table>
-                    <tr>
-                        <td class="date">09.2020 - 06.2022</td>
-                        <td class="education_name">Post-high-school (qualifying course INF.02, INF.03)</td>
-                    </tr>
-                    <tr>
-                        <td class="date">12.2019 - 04.2021</td>
-                        <td class="education_name">Codecool Kraków</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="experience">
-                <h3 id="experience_header">Experience</h3>
-                <p class="exp_header">Codecool (2019 - 2021)</p>
-                <p class="exp-description">Working on projects in groups, working online, project planning and management (SCRUM), presenting projects in front of companies</p>
+        <div class="experience">
+            <h3 id="experience_header">Experience</h3>
+            <div class="experience_content">
                 <p class="exp_header">SI-eCommerce (10.2021 - now)</p>
-                <p class="exp-description">Participation in the training on the Hybris platform and integration of this solution with SAP, working with relational databases, delivering REST API project functionalities</p>
+                <ul class="exp-description">
+                    <li>writing the high quality code according to guidelines</li>
+                    <li>contribution to code review processes to uphold coding standards</li>
+                    <li>creating comprehensive documentation on Bitbucket to facilitate maintenance of the software</li>
+                    <li>maintenance and creating queries on MySQl and PostgreSQL relational databases with use of Flexible Search Query</li>
+                    <li>bug detection and resolution for efficient troubleshooting and rectifying software defects</li>
+                    <li>development of REST API project functionalities, including payment, checkout and customer administration</li>
+                    <li>participation in ETL data flow in the company</li>
+                    <li>expanding my knowledge of SAP by attending courses</li>
+                    <li>working with a prioritization system to categorize tasks based on urgency, importance, and impact on project milestones</li>
+                    <li>calculating and reviewing task estimates throughout the project lifecycle</li>
+                    <li>participation in team meetings and brainstorming</li>
+                </ul>
+                <p class="exp_header">Codecool (2019 - 2021)</p>
+                <ul class="exp-description">
+                    <li>active participation in the project development process collaborating with team members</li>
+                    <li>collaborates closely with teachers in a role of clients to understand their needs and requirements</li>
+                    <li>project planning and management in SCRUM guidelines</li>
+                    <li>prepared and delivered presentations to clients, showcasing project progress</li>
+                    <li>development of presenting skills</li>
+                    <li>implemented effective time management strategies while working remotely from home</li>
+                    <li>acquiring knowledge of various programming tools</li>
+                </ul>
             </div>
         </div>
 
-        <div class="competencies">
+        <div class="competencies_skills">
             <div class="competencies_content">
-                <div class="column1">
+                <div class="competencies">
                     <h3 id="competencies_header">Competencies</h3>
                     <table class="competencies_technologies">
                         <tr>
                             <td class="comp_col"><i class="fas fa-arrow-circle-right"></i></td>
-                            <td class="comp_col">Java SE/EE (Spring, JUnit 5)</td>
+                            <td class="comp_col">Java SE/EE</td>
                         </tr>
                         <tr>
                             <td class="comp_col"><i class="fas fa-arrow-circle-right"></i></td>
-                            <td class="comp_col">Python</td>
+                            <td class="comp_col">Spring</td>
                         </tr>
                         <tr class="front">
                             <td class="comp_col"><i class="fas fa-arrow-circle-right"></i></td>
@@ -84,11 +83,11 @@
                         </tr>
                         <tr>
                             <td class="comp_col"><i class="fas fa-arrow-circle-right"></i></td>
-                            <td class="comp_col">SQL (PostgreSQL, Hibernate)</td>
+                            <td class="comp_col">SQL</td>
                         </tr>
                     </table>
                 </div>
-                <div class="column2">
+                <div class="skills">
                     <h3 id="competencies_header">Soft skills</h3>
                     <table class="competencies_skills">
                         <tr>
@@ -109,64 +108,53 @@
                         </tr>
                     </table>
                 </div>
-                <div class="column3">
-                    <h3 id="competencies_header">Languages</h3>
-                    <table class="competencies_languages">
-                        <tr>
-                            <td class="comp_col language_name">Polish</td>
-                            <td rowspan="2" class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="language_lvl">(Native)</td>
-                        </tr>
-                        <tr>
-                            <td class="comp_col language_name">English</td>
-                            <td rowspan="2" class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="language_lvl">(Proficient)</td>
-                        </tr>
-                        <tr>
-                            <td class="comp_col language_name">Russian</td>
-                            <td rowspan="2" class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="language_lvl">(Intermediate)</td>
-                        </tr>
-                        <tr>
-                            <td class="comp_col language_name">Norwegian</td>
-                            <td rowspan="2" class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                                <i class="far fa-circle"></i>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="language_lvl">(Beginner)</td>
-                        </tr>
-                    </table>
-                </div>
             </div>
             <div class="additive_info">
                 <p id="additive_start_phrase">Additionaly:</p>
-                <p>experience with Linux system, Hybris platform, working in IntelliJ, using Maven and Git version
-                    control system</p>
+                <p>experience with SAP, Hybris platform, Linux system, JUnit 5, working in IntelliJ, using Git version
+                    control system, <br> creating website for friend's company 
+                    (<a href="https://stajnia-pod-wislanym-walem.onrender.com/">stajnia-pod-wislanym-walem.onrender.com</a>)</p>
+            </div>
+        </div>
+
+        <div class="languages_education">
+            <div class="languages">
+                <h3 id="competencies_header">Languages</h3>
+                <table class="competencies_languages">
+                    <tr>
+                        <td class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i></td>
+                        <td class="comp_col language_name">Polish</td>
+                        <td class="language_lvl">Native</td>
+                    </tr>
+                    <tr>
+                        <td class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i></td>
+                        <td class="comp_col language_name">English</td>
+                        <td class="language_lvl">Proficient</td>
+                    </tr>
+                    <tr>
+                        <td class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i></td>
+                        <td class="comp_col language_name">Russian</td>
+                        <td class="language_lvl">Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td class="comp_col language_lvl_graphic"><i class="fas fa-circle"></i></td>
+                        <td class="comp_col language_name">Norwegian</td>
+                        <td class="language_lvl">Beginner</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="education">
+                <h3 id="competencies_header">Education</h3>
+                <table>
+                    <tr>
+                        <td class="date">09.2020 - 06.2022</td>
+                        <td class="education_name">Post-high-school (qualifying course INF.02, INF.03)</td>
+                    </tr>
+                    <tr>
+                        <td class="date">12.2019 - 04.2021</td>
+                        <td class="education_name">Codecool Kraków</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
