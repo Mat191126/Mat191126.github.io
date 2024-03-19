@@ -126,7 +126,7 @@ li::marker {
 }
 
 li {
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 #profile_picture {
@@ -147,7 +147,7 @@ li {
 .education > table {
     border-collapse: separate;
     border-spacing: 0 1em;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .date {
@@ -164,6 +164,11 @@ li {
 .competencies_skills {
     display: flex;
     flex-direction: column;
+    font-size: 0.8em;
+}
+
+.competencies_technologies {
+    font-size: 0.8em;
 }
 
 .competencies, .skills, .languages, .education {
@@ -183,7 +188,7 @@ li {
 
 .competencies_languages {
     padding-left: 0.7em;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 .exp_header {
