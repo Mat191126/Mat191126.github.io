@@ -9,6 +9,17 @@ body {
     font-size: 0.9em;
 }
 
+#button {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+
 .mainContainer {
     background-color: var(--main-background);
     width: 210mm;
@@ -117,13 +128,16 @@ li::marker {
 
 #description {
     padding: 0.3em 1.3em 0.3em;
-    font-size: 0.95em;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
+}
+
+li {
+    font-size: 0.8em;
 }
 
 #profile_picture {
@@ -144,6 +158,7 @@ li::marker {
 .education > table {
     border-collapse: separate;
     border-spacing: 0 1em;
+    font-size: 0.8em;
 }
 
 .date {
@@ -160,6 +175,11 @@ li::marker {
 .competencies_skills {
     display: flex;
     flex-direction: column;
+    font-size: 0.8em;
+}
+
+.competencies_technologies {
+    font-size: 0.8em;
 }
 
 .competencies, .skills, .languages, .education {
@@ -179,6 +199,7 @@ li::marker {
 
 .competencies_languages {
     padding-left: 0.7em;
+    font-size: 0.8em;
 }
 
 .exp_header {
