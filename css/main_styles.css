@@ -132,6 +132,7 @@ li::marker {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.1em;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -148,7 +149,7 @@ li {
 
 .experience {
     width: 100%;
-    font-size: 0.9em;
+    font-size: 1.1em;
 }
 
 .experience_content {
@@ -172,22 +173,40 @@ li {
     width: 50%;
 }
 
-.competencies_skills {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8em;
-}
-
 .competencies_technologies {
     font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.competencies, .skills, .languages, .education {
+.competencies {
+    width: 100%;
+}
+
+.competencies_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competencies_field > p {
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+}
+
+.fa-java, .fa-js, .fa-database {
+    font-size: 1.9em;
+    color: var(--competencies-icon-color);
+}
+
+.spring_icon {
+    height: 1.9em;
+}
+
+.languages, .education {
     width: 45%;
-}
-
-.comp_col {
-    margin-bottom: 0;
 }
 
 .competencies_content, .languages_education {
@@ -264,20 +283,6 @@ li {
     background-color: var(--main-theme-color);
     padding: 0.2em;
     text-align: center;
-}
-
-.additive_info {
-    font-size: 0.8em;
-    margin-left: 0.2em;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#additive_start_phrase {
-    margin-right: 0.3em;
-    border-bottom: 0.3em solid var(--main-theme-color);
 }
 
 /*icons in contact section*/
